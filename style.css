@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: linear-gradient(60deg, red, purple);
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+#form {
+  padding: 2rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: larger;
+  font-weight: 500;
+  border: 2px black solid;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px
+}
+
+#form>div {
+  position: relative;
+  display: grid;
+  text-align: center;
+  row-gap: 5px;
+}
+
+#form>div>input,
+select {
+  padding: 6px;
+  font-size: large;
+  text-align: center;
+}
+
+label::after {
+  position: absolute;
+  right: 0;
+  font-size: larger;
+  content: "*";
+  color: rgb(255, 0, 0);
+}
+
+#form>button {
+  padding: 10px;
+  border: 1px black solid;
+  border-radius: 6px;
+  font-size: large;
+  color: white;
+  background-color: black;
+}
+
+#form #passwordDiv {
+  row-gap: 10px;
+}
+
+#passwordError {
+  color: red;
+  font-size: large;
+}
+
+.error {
+  border-color: red;
+  background-color: lightcoral;
+  border-style: solid;
+}
