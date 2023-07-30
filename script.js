@@ -4,8 +4,8 @@ const form = document.getElementById("form");
 const passwordErrorDiv = document.getElementById("passwordError");
 const email = document.getElementById("mail");
 const zipCode = document.getElementById("zipCode");
-zipCode.setAttribute("pattern","[0-9]{6}"); 
-zipCode.title = "Must be a 6 letter ZipCode";
+zipCode.setAttribute("pattern","[0-9]{3}-?[0-9]{3}"); 
+zipCode.title = "Must be a 6 number ZipCode";
 
 function matchPassword(){
   passwordErrorDiv.innerHTML = "";  
